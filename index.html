@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- put link to highest scores to the left -->
+        <a href="./highScores.html">High Scores</a>
+        <!-- put timer to the right -->
+        <div>Timer:  <span id="start-time">86</span></div>
+    </header>
+    
+    <div id="begin-menu" class="begin">
+        <h1>The Code Quiz of Quizzes</h1>
+        <p>Do you have what it takes to be a very basic front end developer?  Prove it!  You have 86 seconds to answer 5 coding questions.  Once all five questions are answered correctly, the time remaining will be your score.  Beware of getting answers wrong, as it will deduct 10 seconds from your score --- each time.  If you're not chicken, push "Begin Quiz" below to take the quiz.</p>
+        <button id="begin-button">Begin Quiz</button>
+    </div>
+    <!-- questions -->
+    <div id="questions" class="hidden">
+        <h3 id="single-question"></h3>
+        <div id="options" class="options"></div>
+    </div>
+    <!--  -->
+    <div id="score-screen" class="hidden">
+        <h3>You have completed the code quiz of quizzes!</h3>
+        <p>Your score is <span id="score"></span></p>
+        <p>
+            Enter initials:  
+            <input type="text" id="initials" max="3">
+            <button id="submit">Submit</button>
+        </p>
+    </div>
+    <div>
+        <div id="message" class="message hidden"></div>
+    </div>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

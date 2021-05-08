@@ -1,0 +1,75 @@
+body {
+    background-color: cornflowerblue;
+    color:cornsilk;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    width: 60%;
+    margin: 10px 20% 0 20%;
+}
+
+header p {
+    display: inline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+a:hover {
+    color: darkgrey;
+}
+
+#begin-menu {
+    border: solid white;
+    padding: 0px 5px 15px 5px;
+    text-align: center;
+}
+
+#begin-menu p {
+    text-align: left;
+    padding: 5px 15px 5px 15px;
+}
+
+button {
+    font-size: 100%;
+    border-radius: 5px;
+    background-color: cornsilk;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+.begin-menu button {
+    justify-content: center;
+}
+
+#questions, #score-screen {
+    border: solid white;
+    padding: 0px 5px 15px 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.message {
+    font-style: italic;
+    font-size: 125%;
+    margin: 20px 0 0 0;
+    padding: 10px 0 10px 0;
+    color:cornsilk;
+    border: 3px solid cornsilk;
+    text-align: center;
+}
